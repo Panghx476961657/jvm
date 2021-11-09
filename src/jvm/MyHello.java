@@ -3,14 +3,14 @@ package jvm;
 import java.time.LocalDateTime;
 
 /**
- * javac -encoding UTF-8 Hello.java
- * javap -c jvm.Hello
+ * javac -encoding UTF-8 MyHello.java
+ * javap -c jvm.MyHello
  */
-public class Hello {
+public class MyHello {
 
-    private static final String name = "Hello.class";
+    private static final String name = "MyHello.class";
 
-    public Hello() {
+    public MyHello() {
         System.out.println(name + " is load constructor, now time is: " + LocalDateTime.now());
     }
 
