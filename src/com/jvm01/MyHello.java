@@ -1,10 +1,10 @@
-package jvm;
+package com.jvm01;
 
 import java.time.LocalDateTime;
 
 /**
- * javac -encoding UTF-8 MyHello.java
- * javap -c jvm.MyHello
+ * javac -encoding UTF-8 com/jvm01/MyHello.java
+ * javap -c com.jvm01.MyHello
  */
 public class MyHello {
 
