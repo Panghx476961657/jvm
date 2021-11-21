@@ -73,7 +73,7 @@ public class HelloClassLoaderByUrl extends ClassLoader {
 
     public static void main(String[] args) throws Exception {
         System.out.println(1);
-        String path = "F:\\java学习\\jvm\\src\\com\\jvm01\\MyHello.class";
+        String path = "F:\\java学习\\jvm\\src\\main\\com\\jvm01\\MyHello.class";
         HelloClassLoaderByUrl classloader = new HelloClassLoaderByUrl(path);
         Class<?> classLoad = classloader.findClass("com.jvm01.MyHello");
         if (classLoad == null) {

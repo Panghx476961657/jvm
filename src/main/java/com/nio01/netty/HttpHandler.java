@@ -1,6 +1,5 @@
-package com.jvm02.netty;
+package com.nio01.netty;
 
-import com.jvm02.HttpclientUtil;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -52,9 +51,10 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
     private void handlerTest(FullHttpRequest fullRequest, ChannelHandlerContext ctx, String body) {
         FullHttpResponse response = null;
         try {
-            //String value = body; // 对接上次作业的httpclient或者okhttp请求另一个url的响应数据
+            String value = body;
+            //对接上次作业的httpclient或者okhttp请求另一个url的响应数据
             //httpGet ...  http://localhost:8801
-            String value = HttpclientUtil.get("http://localhost:8801");
+            //String value = HttpclientUtil.get("http://localhost:8801");
 
             response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(value.getBytes("UTF-8")));
             response.headers().set("Content-Type", "application/json");

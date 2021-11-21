@@ -1,4 +1,4 @@
-package com.jvm02;
+package com.nio01;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.http.NameValuePair;
@@ -22,7 +22,7 @@ public class HttpclientUtil {
     public static void main(String[] args) throws Exception {
         //String result = get("http://www.baidu.com");
         //System.out.println(result);
-        String result1 = postMap("http://www.baidu.com", null);
+        String result1 = get("http://127.0.0.1:8808");
         System.out.println(result1);
     }
 
